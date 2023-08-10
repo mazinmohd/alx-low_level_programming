@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
-  * main - print text
+  * main - Entry point
   *
-  * Description : use puts function to print text
+  * Description: use puts function to print text
   *
-  * Retrun: Alawys 0 (Success)
+  * Return: Alawys 0 (Success)
   */
 int main(void)
 {
