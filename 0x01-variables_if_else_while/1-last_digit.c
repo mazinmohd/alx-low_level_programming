@@ -5,7 +5,8 @@
   * main - Entry point
   *
   * Description : program count the mod and print the value of it
-  * Return : Always 0 (success)
+  *
+  * Return: 0 (success)
  */
 int main(void)
 {
