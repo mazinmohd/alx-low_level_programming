@@ -6,17 +6,24 @@
  */
 int main(void)
 {
-	int a = 0;
-	int b = 0;
+	int a = 0, b;
+	
 
 	while (a <= 9)
 	{
-		putchar(a + '0');
-		while (b <= '9')
+		b = 0;
+		while (b <= 9)
 		{
-			putchar(b + '0');
-			putchar(',');
-			putchar(' ');
+			if (a != b && a < b)
+			{
+				putchar(a + '0');
+				putchar(b + '0');
+				if (a + b != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 			b++;
 		}
 		a++;
