@@ -37,7 +37,7 @@ int main(void)
 	{
 		if (f3 > 0)
 			printf("%lu", f3);
-		ini = num_length(max) - num_length(f1);
+		ini = num_length(max) - 1 - num_length(f1);
 		while (f3 > 0 && ini > 0)
 		{
 			printf("%d", 0);
