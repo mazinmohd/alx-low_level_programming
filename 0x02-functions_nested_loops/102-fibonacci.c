@@ -9,7 +9,7 @@
 int main(void)
 {
 	int c;
-	unsigned long fb1 = 0, fb2 = 0, s;
+	unsigned long fb1 = 0, fb2 = 1, s;
 
 	for (c = 0; c < 50; c++)
 	{
