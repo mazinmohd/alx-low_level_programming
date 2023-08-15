@@ -18,8 +18,7 @@ void jack_bauer(void)
 			_putchar(':');
 			_putchar((b / 10) + '0');
 			_putchar((b % 10) + '0');
-			if (a + b != 82)
-				_putchar('\n');
+			_putchar('\n');
 			b++;
 		}
 		a++;
