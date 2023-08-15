@@ -50,7 +50,7 @@ int main(void)
 		f3 = f4;
 		f2 = s;
 		f4 = sa;
-		if (co != 90)
+		if (co != 98)
 			printf(", ");
 		else
 			printf("\n");
