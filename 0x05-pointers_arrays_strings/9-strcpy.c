@@ -1,8 +1,8 @@
 #include "main.h"
 /**
   * *_strcpy - copies the string
-  * @*dest: input vlaue
-  * @*src: input vlaue
+  * @dest: input vlaue
+  * @src: input vlaue
   * Return: return the copy
  */
 

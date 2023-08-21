@@ -2,7 +2,7 @@
 
 /**
   * print_array - function print array
-  * @*a: input value
+  * @a: input value
   * @n: input value
  */
 
@@ -15,7 +15,7 @@ void print_array(int *a, int n)
 		if (i != (n -1))
 			printf("%d, ", a[i]);
 		else
-			printf("%d", a[i];
+			printf("%d", a[i]);
 	}
 	printf("\n");
 }
