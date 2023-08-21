@@ -2,7 +2,7 @@
 
 /**
   * puts2 - function reset variable
-  * @*str: input value
+  * @str: input value
  */
 
 void puts2(char *str)
