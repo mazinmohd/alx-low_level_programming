@@ -2,11 +2,11 @@
 
 /**
   * _strlen - function reset variable to 98
-  * @*s: input value
+  * @s: input value
   * Return: the length of string
  */
 
-int _strlen(int *s)
+int _strlen(char *s)
 {
 	int count;
 

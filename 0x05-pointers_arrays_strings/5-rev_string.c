@@ -2,7 +2,7 @@
 
 /**
   * rev_string - function print string reverse
-  * @*s: input value
+  * @s: input value
  */
 
 void rev_string(char *s)

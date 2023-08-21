@@ -2,7 +2,7 @@
 
 /**
   * _puts - function print string
-  * @*str: input value
+  * @str: input value
  */
 
 void _puts(int *str)

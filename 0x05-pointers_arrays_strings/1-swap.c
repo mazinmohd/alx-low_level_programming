@@ -2,8 +2,8 @@
 
 /**
   * swap_int - function swap two variable
-  * @*a: input value
-  * @*b: input vlaue
+  * @a: input value
+  * @b: input vlaue
  */
 
 void swap_int(int *a, int *b)
