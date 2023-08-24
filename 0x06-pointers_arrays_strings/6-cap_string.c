@@ -42,7 +42,7 @@ char *cap_string(char *str)
 	{
 		if (is_del(*str))
 			fdel = 1;
-		else if (is_low(*s) && fdel)
+		else if (is_low(*str) && fdel)
 		{
 			*str -= 32;
 			fdel = 0;
