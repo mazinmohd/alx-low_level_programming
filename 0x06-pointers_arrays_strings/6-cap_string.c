@@ -49,6 +49,7 @@ char *cap_string(char *str)
 		}
 		else
 			fdel = 0;
+		str++;
 	}
 	return (ptr);
 
