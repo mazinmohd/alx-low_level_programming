@@ -19,7 +19,7 @@ char *string_toupper(char *);
 
 int is_low(char c);
 
-char is_del(char c);
+int is_del(char c);
 
 char *cap_string(char *);
 
