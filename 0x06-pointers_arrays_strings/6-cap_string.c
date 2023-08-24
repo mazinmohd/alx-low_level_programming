@@ -1,6 +1,16 @@
 #include "main.h"
 #include <stdio.h>
 /**
+  * is_low - test the string
+  * @c: input value
+  * Return: 1 or 0
+ */
+
+int is_low(char c)
+{
+	return (c >= 97 && c <= 122);
+}
+/**
   * is_del - test input
   * @c: input value
   * Return: retun 0 or 1
@@ -32,7 +42,7 @@ char *cap_string(char *str)
 	{
 		if (is_del(*str))
 			fdel = 1;
-		else if ((*str >= 97 && *str <= 122) && fdel)
+		else if (is_low(*s) && fdel)
 		{
 			*str -= 32;
 			fdel = 0;
