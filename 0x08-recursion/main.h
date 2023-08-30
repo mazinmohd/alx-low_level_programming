@@ -22,4 +22,11 @@ int _sqrt_recursion(int n);
 int is_prime_number(int n);
 
 int check_prime(int n, int x);
+
+int _strlen_(char *s);
+
+int is_palind(char *s, int i, int j);
+
+int is_palindrome(char *s);
+
 #endif
