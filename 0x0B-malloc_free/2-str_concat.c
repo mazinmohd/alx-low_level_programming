@@ -1,5 +1,4 @@
 #include "main.h"
-#include <limits.h>
 /**
   * *str_concat - concatenates two string
   * @s1: input
@@ -23,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 	m = malloc((size1 + size2) * sizeof(char) + 1);
 	if (m == NULL)
         {
-            printf("Can't allocate %d bytes (after %d calls)\n", INT_MAX, i);
+            printf("Can't allocate bytes (after calls)\n");
 	}
 	for (i = 0; i < size1; i++)
 		m[i] = s1[i];
