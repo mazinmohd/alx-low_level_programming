@@ -1,44 +1,31 @@
-#include "main.h"
 #include <stdlib.h>
+#include "main.h"
 /**
-  * *_memset - concat two string
-  * @s: input
-  * @b: input
-  * @n: input
-  * Return: s
- */
-
-char *_memset(char *s, char b, unsigned int n)
-{
-	char *ptr = s;
-
-	while (n--)
-		*s++ = b;
-
-	return (ptr);
-}
-
-/**
-  * *_calloc - allocate memory
-  * @nmemb: input
-  * @size: input
-  * Return: the concat string
- */
-
+  * _calloc - allocates memory of an array using malloc.
+  * @nmemb: number of elements in array.
+  * @size: size of elements of array.
+  *
+  * Return: NULL is size or nmemb == 0.
+  * NULL if malloc fails.
+  * Pointer to memory allocated if successful.
+  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *m;
+	void *p;
+	unsigned int i;
 
-	if (size == 0 || nmemb == 0)
+	if (nmemb == 0 || size == 0)
 		return (NULL);
-
-	m = malloc(sizeof(int) * nmemb);
-
-	if (m == NULL)
+	p = malloc(nmemb * size);
+	if (p == NULL)
+	{
 		return (NULL);
+	}
 
-	_memset(m, 0, sizeof(int) * nmemb);
+	for (i = 0; i < (nmemb * size); i++)
+	{
+		*((char *)(p) + i) = 0;
+	}
 
-	return (m);
+	return (p);
 }
-
