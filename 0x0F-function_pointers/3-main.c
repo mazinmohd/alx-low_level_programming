@@ -5,10 +5,10 @@
  * main - do the mathimatical opration
  * @argc: the number of argument
  * @argv: array of argument
- * Retrun: 0 if sucsseful else if fail
+ * Return: 0 if sucsseful else if fail
  */
 
-int main(int argc,char *argv[])
+int main(int argc, char *argv[])
 {
 	int num1, num2, result;
 	char op;
@@ -22,7 +22,7 @@ int main(int argc,char *argv[])
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	
+
 	fun = get_op_func(argv[2]);
 
 	if (!fun)
