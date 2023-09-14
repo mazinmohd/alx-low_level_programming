@@ -11,8 +11,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	int i = n, x;
 
 	if (!n)
+	{
+		printf("\n");
 		return;
-
+	}
 	va_start(pr, n);
 	while (i--)
 	{
