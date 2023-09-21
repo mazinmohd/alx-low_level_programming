@@ -23,6 +23,9 @@ list_t *add_node(list_t **head, const char *str)
 	if (first == NULL)
 		return (NULL);
 
+	first->next = *head;
+	*head = first;
+
 	first->str = strdup(str);
 
 	for (i = 0; str[i]; i++)
