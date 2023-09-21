@@ -30,4 +30,7 @@ list_t *add_node(list_t **head, const char *str);
 
 /*  add node at the end  */
 list_t *add_node_end(list_t **head, const char *str);
+
+/*  free the linked list  */
+void free_list(list_t *head);
 #endif
