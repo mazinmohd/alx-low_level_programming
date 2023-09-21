@@ -24,4 +24,7 @@ size_t print_list(const list_t *h);
 
 /*  number of element  */
 size_t list_len(const list_t *h);
+
+/*  add node at the beginning  */
+list_t *add_node(list_t **head, const char *str);
 #endif
