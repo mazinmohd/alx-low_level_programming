@@ -3,7 +3,7 @@
  * print_binary - prints the binary representation of number
  * @n: the number in base 10
  */
-void print_binary(unsigned int n)
+void print_binary(unsigned long int n)
 {
 	if (n > 1)
 		print_binary(n >> 1);
