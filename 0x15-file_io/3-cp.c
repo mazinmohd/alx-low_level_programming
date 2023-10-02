@@ -15,13 +15,13 @@ int _exit_(int error, char *str, int file)
 			dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 			exit(error);
 		case 98:
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", s);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", str);
 			exit(error);
 		case 99:
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", s);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", str);
 			exit(error);
 		case 100:
-			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file);
 			exit(error);
 		default:
 			return (0);
